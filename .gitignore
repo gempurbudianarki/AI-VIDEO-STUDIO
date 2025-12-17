@@ -2,13 +2,16 @@
 # PYTHON / VENV (WAJIB DI-IGNORE)
 # =========================
 venv/
-.env
-.env.*
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .pytest_cache/
+
+# ENV (JANGAN PERNAH KE GIT)
+.env
+.env.*
+!.env.example
 
 # =========================
 # OS / EDITOR JUNK
@@ -27,43 +30,35 @@ Thumbs.db
 *.db
 
 # =========================
-# NODE (kalau nanti pakai)
+# NODE (KALAU SUATU HARI PAKAI)
 # =========================
 node_modules/
 
 # =========================
-# STORAGE (FOLDER BOLEH MASUK, ISI FILE DI-IGNORE)
+# STORAGE (FOLDER MASUK, ISI FILE DI-IGNORE)
 # =========================
 
-# Upload video
 storage/uploads/*
 !storage/uploads/.gitkeep
 
-# Background music user
 storage/bgm/*
 !storage/bgm/.gitkeep
 
-# Raw clips
 storage/clips/*
 !storage/clips/.gitkeep
 
-# Transcripts
 storage/transcripts/*
 !storage/transcripts/.gitkeep
 
-# Timeline edit state
 storage/edits/*
 !storage/edits/.gitkeep
 
-# ASS subtitle files
 storage/ass/*
 !storage/ass/.gitkeep
 
-# Final rendered clips
 storage/clips_subtitled/*
 !storage/clips_subtitled/.gitkeep
 
-# Legacy support
 storage/final/*
 !storage/final/.gitkeep
 
@@ -77,7 +72,7 @@ storage/final/*
 *.mp3
 *.wav
 
-# (kalau suatu hari mau commit sample kecil, tinggal whitelist)
+# (kalau suatu hari mau commit sample kecil)
 # !assets/sample.mp3
 
 # =========================
